@@ -8,7 +8,7 @@ This guide explains how to set up and populate the Library Management System rel
 ## Prerequisites
 - **MySQL Server** installed and running (version 5.7+ recommended)
 - Access to the MySQL CLI (`mysql`) or a MySQL GUI tool (e.g., MySQL Workbench, phpMyAdmin)
-- **Schema file:** `library_schema.sql`
+- **Schema file:** `library_db.sql`
 - **Data file:** `library_data.sql`
 
 ---
@@ -19,10 +19,10 @@ This guide explains how to set up and populate the Library Management System rel
 2. **Run the schema script**:
     - **Command Line:**
       ```
-      mysql -u yourusername -p < library_schema.sql
+      mysql -u yourusername -p < library_db.sql
       ```
     - **MySQL Workbench / phpMyAdmin:**
-      - Open `library_schema.sql`, select all, and execute.
+      - Open `library_db.sql`, select all, and execute.
 
     > This will create a database named `library_db` and all required tables and relationships.
 
